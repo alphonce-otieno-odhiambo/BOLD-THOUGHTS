@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{%block title%}
+<div class="container">
+    <div id="title">
+        <h2>BOLD THOUGHTS ARENA</h2>
+
+    </div>
+</div>
+
+{%endblock%}
+
+{%block content%}
+<div class="container bd-dark">
+    <div class="row">
+        <div class="col">
+            <form action="" method="POST">
+                {{form.hidden_tag()}}
+                {{post.title.label(class="form-label")}}
+                {{post.title(class="form-control")}}
+
+                <br>
+
+                {{post.content.label(class="form-label")}}
+                {{post.content(class="form-control", rows="5")}}
+                <br>
+                {{post.submit(class= btn btn-outline-info)}}
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+{%endblock%}
