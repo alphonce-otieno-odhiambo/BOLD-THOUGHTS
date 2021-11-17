@@ -57,6 +57,23 @@
                   2 days ago
                 </div>
               </div>
+              <br>
+              <div class="card text-center">
+                {% for blog in blogs %}
+                <div class="card-header">
+                 posted blogg
+                </div>
+                <div class="card-body border border-info " >
+                  <h6 class="card-title">Alphonce Ali</h6>
+                  <h5 class="card-title">{{blog.title}}</h5>
+                  <p class="card-text">{{blog.content}}.</p>
+                  <a href="#" class="btn btn-primary">Comment</a>
+                </div>
+                <div class="card-footer text-muted">
+                  {{blog.submited}}
+                </div>
+                {%endfor%}
+              </div>
         </div>
     </div>
 </div>

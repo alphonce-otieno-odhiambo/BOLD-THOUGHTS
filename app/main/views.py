@@ -12,8 +12,11 @@ from .. import db
 
 @main.route('/')
 def index():
-    post = Post.query.all()
-    return render_template('index.html', post = post)
+    blogs = Post.query.order_by(Post.submited)
+    return render_template('index.html', blog = blogs)
+
+
+
 
 @main.route('/post', methods = ['GET', 'POST'])
 def post():
