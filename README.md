@@ -24,3 +24,8 @@ To get the code..
   ```bash
   git clone https://boldblog.herokuapp.com/
   ```
+2. Move to the folder and install requirements
+  ```bash
+  cd Coffee-and-code
+  pip install -r requirements.txt
+  ```  
