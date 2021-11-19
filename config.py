@@ -4,7 +4,7 @@ class Config:
 
     
     SECRET_KEY = 'kodack'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://alphonce:alphonce@localhost/bloggs'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://alphonce:alphonce@localhost/blg'
     #UPLOADED_PHOTOS_DEST ='app/static/photos'
 #  email configurations
     #MAIL_SERVER = 'smtp.googlemail.com'
@@ -21,7 +21,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://alphonce:alphonce@localhost/bloggs'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://alphonce:alphonce@localhost/blg'
     DEBUG = True
 
 config_options = {

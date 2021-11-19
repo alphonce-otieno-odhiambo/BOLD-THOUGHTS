@@ -1,9 +1,10 @@
-from werkzeug import useragents
+
 from . import main
 from flask import render_template,redirect, url_for, flash
 from .forms import PostForm
 from .. models import Post, User
 from .. import db
+from flask_login import login_required
 
 
 
@@ -19,6 +20,7 @@ def index():
 
 
 @main.route('/post', methods = ['GET', 'POST'])
+@login_required
 def post():
     post = PostForm()
     if post.validate_on_submit():

@@ -39,13 +39,11 @@ class Post(db.Model):
     submited = db.Column(db.DateTime, default=datetime.utcnow)
     users = db.relationship('User',backref = 'post',lazy="dynamic")
 
+    def __repr__(self) :
+        return f'post{self.content}'
+
 
     
 
 
-    def save_pitch(self):
     
-        db.session.add(self)
-        db.session.commit()
-
-
