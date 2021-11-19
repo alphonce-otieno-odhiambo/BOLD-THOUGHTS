@@ -17,3 +17,10 @@ https://boldblog.herokuapp.com/
 7. As a writer, I would also like to create a blog from the application.
 8. As a writer, I would like to delete comments that I find insulting or degrading.
 9. As a writer, I would like to update or delete blogs I have created.
+
+## Setup/Installation Requirements
+To get the code..
+1. Cloning the repository:
+  ```bash
+  git clone https://github.com/Maryan23/Coffee-and-Code.git
+  ```
