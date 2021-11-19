@@ -33,3 +33,8 @@ To get the code..
   ```bash
   chmod a+x start.sh
   ./start.sh
+
+  4. Testing the application
+  ```bash
+  python3.6 manage.py test
+  ```
