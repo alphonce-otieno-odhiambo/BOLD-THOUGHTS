@@ -22,5 +22,5 @@ https://boldblog.herokuapp.com/
 To get the code..
 1. Cloning the repository:
   ```bash
-  git clone https://github.com/Maryan23/Coffee-and-Code.git
+  git clone https://boldblog.herokuapp.com/
   ```
