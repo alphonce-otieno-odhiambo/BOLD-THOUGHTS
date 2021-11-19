@@ -29,3 +29,7 @@ To get the code..
   cd Coffee-and-code
   pip install -r requirements.txt
   ```  
+3. Running the application
+  ```bash
+  chmod a+x start.sh
+  ./start.sh
