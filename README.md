@@ -26,7 +26,7 @@ To get the code..
   ```
 2. Move to the folder and install requirements
   ```bash
-  cd Coffee-and-code
+  cd Bold thoughts
   pip install -r requirements.txt
   ```  
 3. Running the application
